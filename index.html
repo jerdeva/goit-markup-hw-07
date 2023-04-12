@@ -17,6 +17,7 @@
 "
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header-page">
@@ -34,36 +35,119 @@
               >
             </li>
             <li class="menu-title">
-              <a class="site-page link" href="./portfolio.html">Portfolio</a>
+              <a class="site-page link" href="">Portfolio</a>
             </li>
             <li class="menu-title last">
               <a class="site-page link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <!-- contacts -->
+        <!--  contacts -->
         <address class="adress">
           <ul class="contacts-nav list">
-            <li class="menu-title">
+            <li class="menu-title cont-nav">
               <a class="contacts-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="menu-title cont-nav">
               <a class="contacts-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+
+        <button class="menu-open-btn" data-menu-open type="button">
+          <svg width="32px" height="22px" class="icon-menu-open">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- МОБИЛЬНОЕ МЕНЮ -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <!-- кнопка закрытия моб меню -->
+          <button class="mob-menu-close-button" data-meny-close type="button">
+            <svg class="mob-menu-close-icon" width="8px" height="8px">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <!-- mob-menu -->
+          <ul class="mob-site-nav list">
+            <li class="mob-menu-title">
+              <a class="mob-site-page link current-page" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-title">
+              <a class="mob-site-page link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-title last">
+              <a class="mob-site-page link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- моб меню contacts -->
+        <div>
+          <ul class="contacts-mob-nav list">
+            <li class="mob-contacts-title">
+              <a class="contacts-mob-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-contacts-title">
+              <a class="mail-mob-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-menu-soc-list list">
+            <li class="mob-menu-soc-item">
+              <a class="mob-menu-soc-link link" href="">
+                <svg width="16px" height="16px" class="mob-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a class="mob-menu-soc-link link" href="">
+                <svg width="16px" height="16px" class="mob-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a class="mob-menu-soc-link link" href="">
+                <svg width="16" height="16" class="mob-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a class="mob-menu-soc-link link" href="">
+                <svg width="16" height="16" class="mob-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
+    <!--  -->
+    <!-- MAIN -->
+    <!--  -->
     <main>
       <!-- 1 order section -->
       <section class="section order">
         <div class="container">
-          <h1 class="order-title">Effective Solutions for Your Business</h1>
+          <h1 class="order-title">Effective Solutions For Your Business</h1>
           <button class="button-order" data-modal-open type="button">
             Order Service
           </button>
@@ -134,13 +218,14 @@
 
       <!--  3 sect -->
       <!-- What are we doing -->
-      <section class="section">
+      <section class="doing section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="doing list">
             <li class="doing-img">
               <img
                 class="doing-img-part"
+                srcset="./images/comp.jpg 1x, ./images/comp2x.jpg 2x"
                 src="./images/comp.jpg"
                 alt="computer"
                 width="360"
@@ -149,6 +234,7 @@
             <li class="doing-img">
               <img
                 class="doing-img-part"
+                srcset="./images/function.jpg 1x, ./images/function2x.jpg 2x"
                 src="./images/function.jpg"
                 alt="function"
                 width="360"
@@ -157,6 +243,7 @@
             <li class="doing-img last">
               <img
                 class="doing-img-part"
+                srcset="./images/phone.jpg 1x, ./images/phone2x.jpg 2x"
                 src="./images/phone.jpg"
                 alt="phone"
                 width="360"
@@ -174,6 +261,10 @@
           <ul class="our-team list">
             <li class="our-team-part">
               <img
+                srcset="
+                  ./images/team/Mark.jpg             1x,
+                  ./images/team/Mark-Guerrero-2x.jpg 2x
+                "
                 class="team-img"
                 src="./images/team/Mark.jpg"
                 alt="Mark Guerrero"
@@ -217,6 +308,10 @@
             <li class="our-team-part">
               <img
                 class="team-img"
+                srcset="
+                  ./images/team/Tom.jpg         1x,
+                  ./images/team/Tom-Ford-2x.jpg 2x
+                "
                 src="./images/team/Tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -259,6 +354,10 @@
             <li class="our-team-part">
               <img
                 class="team-img"
+                srcset="
+                  ./images/team/Camila.jpg           1x,
+                  ./images/team/Camila-Garcia-2x.jpg 2x
+                "
                 src="./images/team/Camila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -301,6 +400,10 @@
             <li class="our-team-part last">
               <img
                 class="team-img"
+                srcset="
+                  ./images/team/Daniel.jpg           1x,
+                  ./images/team/Daniel-Wilson-2x.jpg 2x
+                "
                 src="./images/team/Daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -555,5 +658,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
