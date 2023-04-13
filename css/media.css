@@ -1,16 +1,28 @@
+/*  */
+/* max-width: 427px */
+/*  */
+@media screen and (max-width: 427px){
+
+.order-title{
+    width: 184px;
+    font-size: 20px;    
+}
+
+.our-customers.list{
+    gap: 10px;
+}
+}
 
 /*  */
 /* MIN-WIDTH: 480px */
 /*  */
-@media screen and (min-width: 480px) and (max-width: 767px){
-    .container {
-        width: 448px;
+@media screen and (min-width:428px) and (max-width: 767px){
+    .container{
+        width: 100%;
     }
-
     .order-title {
         width: 320px;
     }
-
 
     .our-service .our-service-title{
         font-weight: 700;
@@ -27,9 +39,6 @@
         margin-bottom: 0;
     }
 
-    .our-customers.list {
-        gap: 72px 16px;
-    }
 
     .customers-soc-link {
         width: 168px;
@@ -37,6 +46,9 @@
 
         .subscribe-footer-area{
             width: 100%;
+    }
+        .our-customers.list {
+        gap: 72px 16px;
     }
 
 }  
@@ -46,14 +58,10 @@
 /*  */
 
 @media screen and (max-width: 767px) {
-
-
 .footer{
     padding-top: 96px;
     padding-bottom: 96px;
 }
-
-
 
 .footer-cotainer-main {
     padding-left: 15px;
@@ -76,14 +84,12 @@
 }
 
 
-.logo-web.footer-logo {
-    display: flex;
-    justify-content: center;
+.logo-web.footer-logo, .social-media-area, .subscribe-footer-topic {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
 }
-.subscribe-footer-topic, .social-media-area{
-    display: flex;
-    justify-content: center;
-}
+
 
 .container-footer, .social-media-footer{
     margin-bottom: 72px;
@@ -94,20 +100,17 @@
     margin-bottom: 16px ;
     margin-right: 0%;
 }
-
 }
-
 
 
 
 /*  */
 /* MIN-WIDTH: 768px */
 /*  */
-@media screen and (min-width: 768px) and (max-width:1199px)
+@media screen and (min-width: 768px) and (max-width:769px)
 {
-    .container{
-        width: 736px; 
-    }
+    /* .container{
+    width: 720px;    } */
 
     .header.container{
         width: 100%;
@@ -185,13 +188,16 @@
     .contacts-nav {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 122px;
+        margin-left: 120px;
         justify-content: end;
+    }
+    .menu-title.cont-nav{
+        margin-right: 0;
     }
 
 
 
-.contacts-nav .contacts-link {
+    .contacts-nav .contacts-link {
         color: var(--primary-text-color);
         font-weight: 400;
         font-size: 12px;
@@ -204,13 +210,15 @@
 
     .cont-nav:not(:last-child){
             padding-top: 16px;
-                padding-bottom: 12px;
+            margin-bottom: 12px;
     }
 
     .contacts-nav .contacts-link:hover,
     .contacts-nav .contacts-link:focus {
         color: #404bbf;
     }
+
+
 
     .our-service .our-service-title{
         text-align: left;
@@ -245,25 +253,16 @@
 
     .our-team.list {
         justify-content: center;
+        gap: 64px 24px;
     }
 
     .our-team-part {
-        margin-right: 24px; 
-        
+    margin-bottom: 0;        
     }
 
         /* SECT 5  */
         /* CUSTOMERS */
          /*  */
-
-    .our-customers.list {
-        margin-right: -24px;
-    }
-
-        .customers-soc-item {
-        width: calc((100% /3) -24px);
-        margin-right: 24px;
-        }
 
 
     .customers-soc-link {
@@ -292,7 +291,7 @@
   }
 
 
-    }
+}
 
 
 
@@ -300,12 +299,13 @@
 /*  */
 /* MIN-WIDTH: 1200x */
 /*  */
- @media screen and (min-width:1200px) {
+ @media screen and (min-width:769px) {
     .container{
-        width: 1158px;
+    width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
@@ -410,10 +410,17 @@
 /* 1 order section */
 /*  */
 
-    order {
+    .order {
+            background: var(--secondary-color);
+                text-align: center;
+            max-width: 1440px;
             padding-top: 188px;
             padding-bottom: 188px;
             background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/order-sect.jpg);
+                background-position: center;
+                    background-size: cover;
+                    margin-left: auto;
+                    margin-right: auto;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -439,6 +446,9 @@
         margin-left: -24px;
         padding-top: 0;
     }
+        .service-list:last-child{
+            margin-bottom: 72px;
+        }
 
     .our-service .our-service-title{
         font-weight: 500;
@@ -496,12 +506,14 @@
         /* 4 sect our team */
         /*  */
     .our-team.list {
-        margin-right: -24px;
+        /* margin-right: -24px; */
+        gap: 0;
     }
 
     .our-team-part {
-        width: calc((100% / 4) - 24px);
-        margin-right: 24px;}
+    width: calc((100% / 4) - 24px);
+        margin-right: 24px;
+    }
 
 
     .our-team-part.last {
@@ -532,7 +544,12 @@
         margin-right: 120px;
     }
 
-
+    /*  */
+    /* MODAL */
+    /*  */
+    .modal{
+        width: 408px;
+    }
 
 }
-}
+ }

@@ -81,6 +81,7 @@ input{
     font-weight: 800;
     padding-top: 24px;
     padding-bottom: 24px;
+
 }
 /* надпись Studio */
 .logo-studio-header{
@@ -98,10 +99,10 @@ input{
     /* margin-left: 72px; */
 }
 /* навигация стайта */
-/* .nav-area{
+.nav-area{
     display: flex;
 }
-.site-page {
+/*.site-page {
     color: var(--secondary-color);
     font-size: 16px;
     line-height: 1.5;
@@ -129,9 +130,7 @@ input{
     
 }
 
-.current-page{
-    color: #404BBF;
-}
+
 
 .menu-title{
     position: relative;
@@ -198,13 +197,16 @@ stroke: #2E2F42;}
     letter-spacing: 0.02em;
     color: #2E2F42;
     }
+        .current-page {
+            color: #404BBF;
+        }
 
     .contacts-mob-link{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(40 / 36);
     letter-spacing: 0.02em;    
-    color: #434455;
+    color: var(--primary-brend-color);
     margin-bottom: 40px;
     }
 
@@ -258,7 +260,7 @@ stroke: #2E2F42;}
     padding-top: 112px;
     padding-bottom: 112px;
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/order-sect-mob-1x.jpeg);
-    max-width: 1440px;
+    /* max-width: 1440px; */
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -282,7 +284,7 @@ stroke: #2E2F42;}
     line-height: 1.07;
     letter-spacing: 0.02em;
     /* width: 320px; */
-    width: 288px;
+    width: 320px;
     text-align: center;
     margin: 0 auto;
       
@@ -350,6 +352,9 @@ stroke: #2E2F42;}
     /* width: calc((100% / 4) - 24px); */
         width: 100%;
      /* margin-left: 24px; */
+}
+.service-list:not(:last-child)
+{
         margin-bottom: 72px;
 }
 
@@ -390,16 +395,19 @@ stroke: #2E2F42;}
     justify-content: center;
     margin: 0;
     padding: 0;
-    margin-right: -24px;
+    /* margin-right: -24px; */
+        gap: 72px;
 }
 .our-team-part{
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
      /* width: calc((100% / 4) - 24px); */
-     margin-right: 24px; 
+     /* margin-right: 24px;  */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-
+/* .our-team-part:not(:last-child) {
+    margin-bottom: 72px;
+} */
 
 
 .our-team .members{
@@ -415,7 +423,7 @@ stroke: #2E2F42;}
     font-size: 16px;
     line-height: 1.5;
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .photo-team-caption{
@@ -823,7 +831,8 @@ stroke: #2E2F42;}
 }
 
 .modal{
-    width: 408px;
+    /* width: 408px; */
+    width: 392px;
     /* min-height: 584px; */
     position: absolute;
     top: 50%;
