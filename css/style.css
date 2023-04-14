@@ -27,14 +27,24 @@ body{
     display: block;
 }
 /* задаем контейнер */
-.container{
-    /* width: 1158px; */
+
+/* .container{
+    width: 1158px; 
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
-    /* outline: 2px solid coral; */
+     outline: 2px solid coral; 
+} */
+.container {
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
@@ -153,7 +163,7 @@ input{
     border: none;
     background-color: transparent;
     display: inline-block;
-    width: 32px;
+    /* width: 32px; */
     height: 22px;
     margin-top: 24px;
 }
@@ -283,7 +293,6 @@ stroke: #2E2F42;}
     font-size: 36px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    /* width: 320px; */
     width: 320px;
     text-align: center;
     margin: 0 auto;
