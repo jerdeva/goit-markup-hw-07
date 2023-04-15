@@ -1,17 +1,4 @@
-/*  */
-/* max-width: 427px */
-/*  */
-/* @media screen and (max-width: 424px){
 
-.order-title{
-    width: 184px;
-    font-size: 20px;    
-}
-
-.our-customers.list{
-    gap: 72px 16px;
-} 
-} */
 
 /*  */
 /* MIN-WIDTH: 480px */
@@ -320,12 +307,11 @@
 /*  */
 /* MIN-WIDTH: 1200x */
 /*  */
-
-
  @media screen and (min-width: 1158px) {
-            .container {
-                max-width: 1158px;
-            }
+
+.container {
+        max-width: 1158px;
+    }
 
 .section {
     padding-top: 120px;
@@ -457,26 +443,27 @@
 /* 1 order section */
 /*  */
 
-    .order {
-            background: var(--secondary-color);
-                text-align: center;
-            max-width: 1440px;
-            padding-top: 188px;
-            padding-bottom: 188px;
-            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/order-sect.jpg);
-                background-position: center;
-                    background-size: cover;
-                    margin-left: auto;
-                    margin-right: auto;
+.order {
+    background: var(--secondary-color);
+    text-align: center;
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/order-sect.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .order {
-            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url(../images/order-sect-desc2x.jpg);
+    .order {
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/order-sect-desc2x.jpg);
         }
+    }
 
     .order-title {
         font-size: 56px;
@@ -600,4 +587,4 @@
     }
 
 }
- }
+ 
