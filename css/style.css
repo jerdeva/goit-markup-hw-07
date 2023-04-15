@@ -37,7 +37,8 @@ body{
      outline: 2px solid coral; 
 } */
 .container {
-    max-width: 428px;
+    /* max-width: 428px; */
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -495,6 +496,16 @@ stroke: #2E2F42;}
     /* margin-right: -24px; */
 }
 
+
+ /*  */
+ /*  */
+ /*  */
+.our-customers.list {
+    gap: 72px 16px;
+}
+/*  */
+/*  */
+/*  */
 
 
 .customers-soc-link {
