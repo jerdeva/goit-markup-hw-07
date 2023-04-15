@@ -24,6 +24,20 @@
         width: 320px;
     }
 
+    .order {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/order-sect-mob-1x.jpeg);
+                }
+
+     @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .order {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/order-sect-mob2x.jpg);
+                            }
+                        }
+
     .our-service .our-service-title{
         font-weight: 700;
         font-size: 36px;
@@ -244,6 +258,7 @@
         padding-bottom: 112px;
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/order-sect-tablet-1x.jpeg);
     }
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
