@@ -493,7 +493,6 @@
     .service-list {
         width: calc((100% / 4) - 24px);
         margin-left: 24px;
-        margin-bottom: 0;
     }
 
     .our-service .paragraph{
@@ -564,8 +563,10 @@
         flex-wrap: nowrap;
         margin-right: -24px;
         justify-content: center;
+        gap: 0;
     }
 
+       
     .customers-soc-item {
         width: calc((100% / 6) - 24px);
         margin-right: 24px;
